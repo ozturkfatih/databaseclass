@@ -32,7 +32,7 @@ class Config
      */
     public static function setLoadConfigFile($loadConfigFile)
     {
-        $incFile = $_SERVER["DOCUMENT_ROOT"]."/databaseclass/Config/";
+        $incFile = $_SERVER["DOCUMENT_ROOT"]."/".ROOTPATH."/Config/";
         $loadConfigFile=include($incFile.$loadConfigFile.".php");
         self::$loadConfigFile = $loadConfigFile;
     }
